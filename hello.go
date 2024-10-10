@@ -6,6 +6,7 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -16,6 +17,7 @@ const delay = 5
 func main() {
 	ler_sites_do_arquivo()
 	exibe_introducao()
+	registra_log("site-falso", false)
 	for {
 		exibe_menu()
 		comando := ler_comando()
@@ -83,8 +85,10 @@ func test_site(site string) {
 
 	if res.StatusCode == 200 {
 		fmt.Println("Site", site, "foi carregado com sucesso!")
+		registra_log(site, true)
 	} else {
 		fmt.Println("Site", site, "está com problemas. Status Code:", res.StatusCode)
+		registra_log(site, false)
 	}
 }
 
@@ -112,4 +116,16 @@ func ler_sites_do_arquivo() []string {
 	file.Close()
 
 	return sites
+}
+
+func registra_log(site string, status bool) {
+	file, err := os.OpenFile("log.txt", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	file.WriteString(site + " - online: " + strconv.FormatBool(status) + "\n")
+
+	file.Close()
 }
