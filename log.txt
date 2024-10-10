@@ -8,3 +8,5 @@
 10/10/2024 19:22:14 - https://www.alura.com.br/ - online: true
 10/10/2024 19:22:14 - https://www.casadocodigo.com.br/ - online: true
 10/10/2024 19:22:14 - https://www.globo.com/ - online: true
+10/10/2024 19:26:58 - site-falso - online: false
+10/10/2024 19:28:53 - site-falso - online: false

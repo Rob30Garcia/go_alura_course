@@ -27,6 +27,7 @@ func main() {
 			iniciando_monitoramento()
 		case 2:
 			fmt.Println("Exibindo Logs...")
+			imprime_logs()
 		case 0:
 			fmt.Println("Saindo do programa...")
 			os.Exit(0)
@@ -126,6 +127,16 @@ func registra_log(site string, status bool) {
 	}
 
 	file.WriteString(time.Now().Format("02/01/2006 15:04:05") + " - " + site + " - online: " + strconv.FormatBool(status) + "\n")
-
 	file.Close()
+}
+
+func imprime_logs() {
+	file, err := os.ReadFile("log.txt")
+
+	if err != nil {
+		fmt.Println("Error:", err)
+	}
+
+	fmt.Println(string(file))
+	fmt.Println()
 }
