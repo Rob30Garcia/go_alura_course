@@ -1,10 +1,10 @@
-site-falso - online: false
-https://www.alura.com.br/ - online: true
-https://www.casadocodigo.com.br/ - online: true
-https://www.globo.com/ - online: true
-https://www.alura.com.br/ - online: true
-https://www.casadocodigo.com.br/ - online: true
-https://www.globo.com/ - online: true
-https://www.alura.com.br/ - online: true
-https://www.casadocodigo.com.br/ - online: true
-https://www.globo.com/ - online: true
+10/10/2024 19:21:59 - site-falso - online: false
+10/10/2024 19:22:02 - https://www.alura.com.br/ - online: true
+10/10/2024 19:22:02 - https://www.casadocodigo.com.br/ - online: true
+10/10/2024 19:22:03 - https://www.globo.com/ - online: true
+10/10/2024 19:22:08 - https://www.alura.com.br/ - online: true
+10/10/2024 19:22:09 - https://www.casadocodigo.com.br/ - online: true
+10/10/2024 19:22:09 - https://www.globo.com/ - online: true
+10/10/2024 19:22:14 - https://www.alura.com.br/ - online: true
+10/10/2024 19:22:14 - https://www.casadocodigo.com.br/ - online: true
+10/10/2024 19:22:14 - https://www.globo.com/ - online: true
